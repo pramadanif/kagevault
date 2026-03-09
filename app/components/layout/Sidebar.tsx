@@ -1,15 +1,16 @@
 'use client';
 
-// KAGE VAULT — Sidebar | Match landing page design system
+// KAGE VAULT — Sidebar | Starknet Sepolia Testnet | Match landing page design system
+// Design System: colors #1D2253 #2A306A #3E468A #F35917 #A0ABDB | fonts Outfit/Inter/JetBrains Mono | radius xl/2xl | soft glow + shimmer
 import React from 'react';
 import Link from 'next/link';
 import { LayoutDashboard, Lock, FolderOpenDot, GitFork } from 'lucide-react';
 
 const sidebarItems = [
-  { label: 'Dashboard', href: '/app', icon: LayoutDashboard },
-  { label: 'Vault', href: '/app/vault', icon: Lock },
-  { label: 'Portfolio', href: '/app/portfolio', icon: FolderOpenDot },
-  { label: 'Bridge', href: '/app/bridge', icon: GitFork },
+  { label: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
+  { label: 'Vault', href: '/vault', icon: Lock },
+  { label: 'Portfolio', href: '/portfolio', icon: FolderOpenDot },
+  { label: 'Bridge', href: '/bridge', icon: GitFork },
 ];
 
 export const Sidebar: React.FC = () => {

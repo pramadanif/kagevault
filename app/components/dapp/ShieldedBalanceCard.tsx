@@ -1,6 +1,7 @@
 'use client';
 
-// KAGE VAULT — ShieldedBalanceCard | Match landing page design system
+// KAGE VAULT — ShieldedBalanceCard | Starknet Sepolia Testnet | Match landing page design system
+// Design System: colors #1D2253 #2A306A #3E468A #F35917 #A0ABDB | fonts Outfit/Inter/JetBrains Mono | radius xl/2xl | soft glow + shimmer
 import React, { useEffect, useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 import { Card } from '../ui/Card';
@@ -32,6 +33,7 @@ export const ShieldedBalanceCard: React.FC<ShieldedBalanceCardProps> = ({
           onClick={() => setRevealed((prev) => !prev)}
           className="inline-flex items-center justify-center w-9 h-9 rounded-lg border border-navy-border bg-navy-deep text-brand-blue-gray hover:text-white transition-colors"
           aria-label="Toggle shielded balance visibility"
+          title="Reveal shows encrypted ciphertext representation, not plaintext balance"
         >
           {revealed ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
         </button>

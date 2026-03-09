@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { Tag } from '../ui/Tag';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
@@ -63,10 +64,12 @@ export const Hero = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <Button size="lg" className="group">
-              Enter App
-              <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
+            <Link href="/dashboard" className="w-full sm:w-auto">
+              <Button size="lg" className="group w-full">
+                Enter App
+                <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
             <Button variant="outline" size="lg">
               Read Documentation
             </Button>

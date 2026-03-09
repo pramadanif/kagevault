@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { ArrowRight, Lock, ShieldCheck, Zap } from 'lucide-react';
 
@@ -21,10 +22,12 @@ export const FinalCTA = () => {
           Connect your Xverse wallet and deploy capital with institutional-grade privacy today.
         </p>
         
-        <Button size="lg" className="w-full md:w-[360px] group mb-10 text-lg">
-          Enter Kage Vault
-          <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-        </Button>
+        <Link href="/dashboard" className="inline-block w-full md:w-[360px]">
+          <Button size="lg" className="w-full group mb-10 text-lg">
+            Enter Kage Vault
+            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+          </Button>
+        </Link>
 
         <div className="flex flex-wrap justify-center gap-6 text-sm font-mono text-brand-blue-gray">
           <span className="flex items-center gap-2">
